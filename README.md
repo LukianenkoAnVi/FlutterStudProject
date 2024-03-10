@@ -1,6 +1,6 @@
-# stud1
+# Страничка на flutter
 
-A new Flutter project.
+Страничка на flutter с иконкой, описанием, кнопкой добавление в друзья
 
 ## Getting Started
 
