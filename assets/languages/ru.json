@@ -1,0 +1,14 @@
+{
+  "date_registration": "Дата регистрации: ",
+  "friend_removed": "Друг удален",
+  "friend_added": "Друг добавлен",
+  "remove_from_friends": "Удалить из друзей",
+  "add_to_friends": "Добавить в друзья",
+  "send_message": "Отправить сообщение",
+  "about_me": "Обо мне: ",
+  "rank": "Ранг: ",
+  "favorite_hero": "Любимый герой: ",
+  "killed_monsters": "Убито чудовищ",
+  "orders_completed": "Выполнено заказов",
+  "equipment_level": "Уровень экипировки"
+}
