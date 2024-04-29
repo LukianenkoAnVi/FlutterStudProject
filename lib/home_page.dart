@@ -1,9 +1,11 @@
-import 'package:demo_flutter/generated/locale_keys.g.dart';
-import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:easy_localization/easy_localization.dart';
+import 'package:demo_flutter/generated/locale_keys.g.dart';
+import 'settings_screen.dart';
+import 'news_feed_screen.dart';
 
 class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key});
+  const MyHomePage({Key? key}) : super(key: key);
 
   @override
   State<MyHomePage> createState() => _MyHomePageState();
@@ -50,14 +52,12 @@ class _MyHomePageState extends State<MyHomePage> {
                   fontSize: 24,
                   color: Colors.white,
                   fontFamily: 'OldStandardTT',
-
                 ),
               ),
             ),
             Align(
               alignment: Alignment.centerRight,
               child: Container(
-
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20.0),
                   color: Colors.white,
@@ -79,7 +79,36 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
           ],
         ),
+        leading: Padding(
+          padding: const EdgeInsets.only(left: 0.0),
+          child: Row(
+            children: [
+              IconButton(
+                icon: Icon(Icons.settings),
+                color: Colors.white,
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => SettingsScreen()),
+                  );
+                },
+              ),
+              Spacer(), // добавляем Spacer между кнопками
+              IconButton(
+                icon: Icon(Icons.feed),
+                color: Colors.white,
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => NewsFeedScreen()),
+                  );
+                },
+              ),
+            ],
+          ),
+        ),
       ),
+
       body: SingleChildScrollView(
         child: Center(
           child: Column(
