@@ -5,8 +5,8 @@ import 'settings_screen.dart';
 
 @MaterialAutoRouter(
   routes: <AutoRoute>[
-    MaterialRoute(page: NewsFeedScreen, initial: true),
-    MaterialRoute(page: SettingsScreen),
+    MaterialRoute(page: NewsFeedScreen),
+    MaterialRoute(page: SettingsScreen, initial: true),
   ],
 )
 class $AppRouter {}

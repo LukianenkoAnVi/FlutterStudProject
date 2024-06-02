@@ -5,10 +5,10 @@ class NewsFeedScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('News Feed'),
+        title: Text('Новости'),
       ),
       body: Center(
-        child: Text('News Feed Screen'),
+        child: Text('Здесь расположена новостная лента'),
       ),
     );
   }

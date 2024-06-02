@@ -93,7 +93,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   );
                 },
               ),
-              Spacer(), // добавляем Spacer между кнопками
+              Spacer(),
               IconButton(
                 icon: Icon(Icons.feed),
                 color: Colors.white,

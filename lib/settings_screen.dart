@@ -5,10 +5,10 @@ class SettingsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Settings'),
+        title: Text('Настройки'),
       ),
       body: Center(
-        child: Text('Settings Screen'),
+        child: Text('Здесь расположены настройки'),
       ),
     );
   }
